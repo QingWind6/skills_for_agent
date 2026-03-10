@@ -24,6 +24,24 @@ rg -n "ImGui::BeginMainMenuBar|ImGui::TableNextRow|ImGui::InputText|ImGui::Color
 rg -n "BeginMainMenuBar|TableNextRow|InputText|ColorEdit4" imgui_widgets.cpp imgui_tables.cpp imgui_demo.cpp
 ```
 
+## App feature scouting via open-source projects
+
+- Use this path when the user wants a whole feature, workflow, or tool panel rather than a single Dear ImGui API answer.
+- Search for open-source Dear ImGui projects that already implement the same feature or a close interaction pattern.
+- After finding a promising project, verify the concrete APIs and lifecycle against local or upstream Dear ImGui before suggesting code.
+- Keep external references and official Dear ImGui facts clearly separated in the final answer.
+
+Suggested search patterns:
+
+```text
+"Dear ImGui" "file browser"
+"Dear ImGui" "asset browser"
+"Dear ImGui" "log console"
+"Dear ImGui" "timeline"
+"Dear ImGui" "node editor"
+site:github.com "Dear ImGui" "<feature>"
+```
+
 ## Backend integration lookup
 
 - Open the backend headers first.
@@ -109,5 +127,7 @@ rg --files examples -g 'README*' -g 'Makefile' -g 'CMakeLists.txt'
 
 - Prefer exact matches over broad summaries.
 - Mention the closest example directory by path or GitHub URL.
+- When an external project informed the answer, cite that repo and the exact files you used when possible.
 - Explain when a conclusion comes from the public header, example glue code, docs, or internal implementation.
+- Explain when a pattern came from an external reference implementation instead of official Dear ImGui sources.
 - State whether the answer came from the local checkout or upstream fallback.
