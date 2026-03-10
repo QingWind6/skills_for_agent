@@ -61,12 +61,6 @@ Each skill may declare its own runtime requirements. For example:
 | `imgui-repo-navigator` | Find Dear ImGui APIs, examples, backend files, and docs from a local checkout or upstream GitHub | `python3`, optional network | Local-first, GitHub fallback |
 | `n8n-api-v1` | Operate n8n API v1 with authenticated request patterns and endpoint references | n8n API access, optional `curl`/`jq` | Defaults to local `localhost:5678/api/v1`, base URL overridable |
 
-## Included Standalone Guides
-
-| File | Type | Notes |
-|---|---|---|
-| `n8n-api-skills.md` | Compatibility note | Redirects readers to the packaged `skills/n8n-api-v1/` skill |
-
 ## Skill Packaging Guidelines
 
 Recommended rules for new skills added to this repo:
