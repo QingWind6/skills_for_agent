@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Continuity Manager"
+  short_description: "Keep large projects coherent across sessions"
+  default_prompt: "Use $project-continuity-manager to initialize docs/agent, resume a long-running project, create a handoff, or keep project status, architecture, decisions, and tasks aligned across agent sessions."

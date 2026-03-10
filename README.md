@@ -60,6 +60,7 @@ Each skill may declare its own runtime requirements. For example:
 |---|---|---|---|
 | `imgui-repo-navigator` | Find Dear ImGui APIs, examples, backend files, and docs from a local checkout or upstream GitHub | `python3`, optional network | Local-first, GitHub fallback |
 | `n8n-api-v1` | Operate n8n API v1 with authenticated request patterns and endpoint references | n8n API access, optional `curl`/`jq` | Defaults to local `localhost:5678/api/v1`, base URL overridable |
+| `project-continuity-manager` | Keep large projects coherent across many sessions and agents with a durable `docs/agent/` memory layer and validated handoffs | `python3`, optional `git` | Initializes templates, checks docs health, creates handoffs, validates handoffs, and checks handoff freshness |
 
 ## Skill Packaging Guidelines
 
