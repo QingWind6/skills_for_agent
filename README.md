@@ -61,6 +61,7 @@ Each skill may declare its own runtime requirements. For example:
 | `github-stars-organizer` | Audit, classify, clean up, and reorganize GitHub stars into reusable themed GitHub Lists | `python3`, GitHub PAT, network | Supports export, cleanup proposals, bulk unstar, list sync, list reuse for the 32-list cap, and old-list cleanup |
 | `imgui-repo-navigator` | Find Dear ImGui APIs, examples, backend files, and docs from a local checkout or upstream GitHub | `python3`, optional network | Local-first, GitHub fallback |
 | `n8n-api-v1` | Operate n8n API v1 with authenticated request patterns and endpoint references | n8n API access, optional `curl`/`jq` | Defaults to local `localhost:5678/api/v1`, base URL overridable |
+| `open-source-radar` | Find current hot repos and open-source trend signals for any domain, niche, or keyword | live GitHub access, optional ecosystem sources | General-purpose radar workflow with GitHub-first source priority and reproducible query trails |
 | `project-continuity-manager` | Keep large projects coherent across many sessions and agents with a durable `docs/agent/` memory layer and validated handoffs | `python3`, optional `git` | Initializes templates, checks docs health, creates handoffs, validates handoffs, and checks handoff freshness |
 
 ## Skill Packaging Guidelines
@@ -87,6 +88,12 @@ Use the GitHub stars organizer after installation:
 
 ```text
 Use $github-stars-organizer to export my stars, propose theme-based groupings, and sync the final plan into GitHub Lists.
+```
+
+Use the open-source radar skill after installation:
+
+```text
+Use $open-source-radar to find this month's hot and worth-following open-source projects in AI agents.
 ```
 
 Or run its helper directly:

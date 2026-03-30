@@ -1,0 +1,4 @@
+interface:
+  display_name: "Open Source Radar"
+  short_description: "Find hot repos and trend signals by topic"
+  default_prompt: "Use $open-source-radar to find current hot repos and trend signals for any domain, niche, or keyword."
