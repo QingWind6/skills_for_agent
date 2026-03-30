@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Stars Organizer"
+  short_description: "Classify, clean, and list-organize GitHub stars"
+  default_prompt: "Use $github-stars-organizer to audit my starred repositories, propose themed groups, and sync the result into GitHub Lists."

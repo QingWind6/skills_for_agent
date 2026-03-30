@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Embedded / ESP32 / IoT",
+    "file": "Embedded-ESP32-IoT.txt",
+    "description": "ESP32, embedded systems, Home Assistant, TinyML, and device tooling.",
+    "visibility": "public",
+    "reuse_from": "Embedded"
+  },
+  {
+    "name": "AI Agent / MCP / LLM Infra",
+    "file": "AI_Agent-MCP-LLM_Infra.txt",
+    "description": "Agents, MCP, coding tools, orchestration, and LLM infrastructure.",
+    "visibility": "public"
+  },
+  {
+    "name": "Speech / Audio",
+    "file": "Speech-Audio.txt",
+    "description": "Speech synthesis, ASR, voice tooling, and audio infrastructure.",
+    "visibility": "public",
+    "reuse_from": "tts"
+  },
+  {
+    "name": "Vision / Multimodal / Image Gen",
+    "file": "Vision-Multimodal-Image_Gen.txt",
+    "description": "Vision models, multimodal systems, image generation, and perception tools.",
+    "visibility": "public"
+  },
+  {
+    "name": "Video / Animation / Media",
+    "file": "Video-Animation-Media.txt",
+    "description": "Video generation, animation, rendering, editing, and media tooling.",
+    "visibility": "public",
+    "reuse_from": "Video"
+  },
+  {
+    "name": "Robotics / SLAM / RL / Embodied",
+    "file": "Robotics-SLAM-RL-Embodied.txt",
+    "description": "Robotics, SLAM, reinforcement learning, drones, and embodied systems.",
+    "visibility": "public",
+    "reuse_from": "RL"
+  },
+  {
+    "name": "Graphics / UI / Gamedev",
+    "file": "Graphics-UI-Gamedev.txt",
+    "description": "Graphics, rendering, immediate-mode UI, fonts, and game development.",
+    "visibility": "public",
+    "reuse_from": "Graphics"
+  },
+  {
+    "name": "Web / Frontend / Product Build",
+    "file": "Web-Frontend-Product_Build.txt",
+    "description": "Web apps, frontend tooling, product building, low-code, and automation.",
+    "visibility": "public",
+    "reuse_from": "ui"
+  },
+  {
+    "name": "Self-host / Productivity / Infra",
+    "file": "Self-host-Productivity-Infra.txt",
+    "description": "Self-hosted apps, developer productivity, CLI tools, and infrastructure.",
+    "visibility": "public",
+    "reuse_from": "Cloud OS"
+  }
+]
