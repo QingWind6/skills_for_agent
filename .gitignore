@@ -1,0 +1,6 @@
+**/node_modules/
+**/cookies.json
+**/consent.json
+**/chrome-profile/
+**/*.response.json
+**/output/

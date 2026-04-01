@@ -1,0 +1,7 @@
+interface:
+  display_name: "Gemini Web Image"
+  short_description: "Gemini Web single-image generation via isolated local Chrome login"
+  brand_color: "#4285F4"
+  default_prompt: "Use $gemini-web-image to generate or vary one image through Gemini Web. Treat text mode as diagnostics only."
+policy:
+  allow_implicit_invocation: false

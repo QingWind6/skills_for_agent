@@ -59,6 +59,7 @@ Each skill may declare its own runtime requirements. For example:
 | Skill | Purpose | Key Dependencies | Notes |
 |---|---|---|---|
 | `github-stars-organizer` | Audit, classify, clean up, and reorganize GitHub stars into reusable themed GitHub Lists | `python3`, GitHub PAT, network | Supports export, cleanup proposals, bulk unstar, list sync, list reuse for the 32-list cap, and old-list cleanup |
+| `gemini-web-image` | Generate or vary a single image through Gemini Web with an isolated local Chrome login | `bun` or `npx bun`, Chrome/Chromium, interactive login | Unofficial reverse-engineered web flow, image-first, text mode only for diagnostics |
 | `imgui-repo-navigator` | Find Dear ImGui APIs, examples, backend files, and docs from a local checkout or upstream GitHub | `python3`, optional network | Local-first, GitHub fallback |
 | `n8n-api-v1` | Operate n8n API v1 with authenticated request patterns and endpoint references | n8n API access, optional `curl`/`jq` | Defaults to local `localhost:5678/api/v1`, base URL overridable |
 | `open-source-radar` | Find current hot repos and open-source trend signals for any domain, niche, or keyword | live GitHub access, optional ecosystem sources | General-purpose radar workflow with GitHub-first source priority and reproducible query trails |
@@ -94,6 +95,12 @@ Use the open-source radar skill after installation:
 
 ```text
 Use $open-source-radar to find this month's hot and worth-following open-source projects in AI agents.
+```
+
+Use the Gemini Web image skill after installation:
+
+```text
+Use $gemini-web-image to generate one image through Gemini Web from a prompt or reference image.
 ```
 
 Or run its helper directly:

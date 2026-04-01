@@ -1,0 +1,15 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 0,
+  "workspaces": {
+    "": {
+      "name": "gemini-web-image-scripts",
+      "dependencies": {
+        "baoyu-chrome-cdp": "file:./vendor/baoyu-chrome-cdp",
+      },
+    },
+  },
+  "packages": {
+    "baoyu-chrome-cdp": ["baoyu-chrome-cdp@file:vendor/baoyu-chrome-cdp", {}],
+  }
+}
