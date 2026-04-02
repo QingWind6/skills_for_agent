@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XHS Card Studio Prototype</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="topbar-kicker">XHS Studio</p>
+          <h1 id="deckTitle">XHS Card Studio</h1>
+          <p id="deckSubtitle" class="topbar-subtitle">浏览卡片、修改文案、保存 JSON、导出 PNG</p>
+        </div>
+        <div class="topbar-actions">
+          <button id="reloadButton" type="button" class="ghost-button">重载磁盘内容</button>
+          <button id="saveButton" type="button" class="primary-button">保存修改</button>
+          <button id="exportButton" type="button" class="accent-button">一键导出 PNG</button>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <aside class="sidebar panel">
+          <div class="panel-header">
+            <div>
+              <p class="panel-kicker">Templates</p>
+              <h2>模板库</h2>
+            </div>
+          </div>
+          <div id="templateList" class="template-list"></div>
+
+          <div class="panel-header compact">
+            <div>
+              <p class="panel-kicker">Deck</p>
+              <h2>卡片列表</h2>
+            </div>
+            <div class="mini-actions">
+              <button id="moveUpButton" type="button" class="ghost-button small-button">上移</button>
+              <button id="moveDownButton" type="button" class="ghost-button small-button">下移</button>
+            </div>
+          </div>
+          <div id="cardList" class="card-list"></div>
+
+          <div class="panel-header compact">
+            <div>
+              <p class="panel-kicker">Layout</p>
+              <h2>导出检查</h2>
+            </div>
+          </div>
+          <div id="issueList" class="issue-list"></div>
+
+          <div class="panel-header compact">
+            <div>
+              <p class="panel-kicker">Exports</p>
+              <h2>最近导出</h2>
+            </div>
+          </div>
+          <div id="exportList" class="export-list"></div>
+        </aside>
+
+        <section class="preview-panel panel">
+          <div class="panel-header">
+            <div>
+              <p class="panel-kicker">Preview</p>
+              <h2>实时预览</h2>
+            </div>
+            <div class="status-line">
+              <span id="dirtyBadge" class="status-chip is-hidden" aria-live="polite">未保存修改</span>
+              <span id="statusText" class="status-text" role="status" aria-live="polite">加载中...</span>
+            </div>
+          </div>
+          <div id="previewRoot" class="preview-root"></div>
+        </section>
+
+        <aside class="inspector panel">
+          <div class="panel-header">
+            <div>
+              <p class="panel-kicker">Inspector</p>
+              <h2>文案编辑</h2>
+            </div>
+          </div>
+          <form id="editorForm" class="editor-form"></form>
+        </aside>
+      </main>
+    </div>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

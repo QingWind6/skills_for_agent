@@ -1,0 +1,13 @@
+{
+  "name": "pi-xhs-card-studio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "export": "node export.mjs",
+    "check": "node --check server.mjs && node --check export.mjs && node --check public/app.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.52.0"
+  }
+}
