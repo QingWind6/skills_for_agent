@@ -1,4 +1,0 @@
-interface:
-  display_name: "PI XHS Card"
-  short_description: "Generate, edit, preview, and export Xiaohongshu card decks"
-  default_prompt: "Use $pi-xhs-card to build or update a Xiaohongshu card deck in a local web studio, keep text uncropped, and export PNG cards."
